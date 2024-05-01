@@ -1,7 +1,7 @@
 import React from "react";
 import { faCoffee } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
+import Link from "next/link";
 function Header() {
   return (
     <div className="navbar bg-base-100 flex">
@@ -37,7 +37,7 @@ function Header() {
               <a>About</a>
             </li>
             <li>
-              <a>Chat</a>
+              <Link href="/chat">Chat</Link>
             </li>
           </ul>
         </div>
@@ -46,12 +46,14 @@ function Header() {
         <a className="btn btn-ghost text-xl">daisyUI</a>
       </div>
       <div className="navbar-end">
-        <button className="btn">
-          <div>
-            <FontAwesomeIcon icon={faCoffee} />
+        <Link href="/chat">
+          <button className="btn">
             Chat
-          </div>
-        </button>
+            <div className="w-5">
+              <FontAwesomeIcon icon={faCoffee} />
+            </div>
+          </button>
+        </Link>
         <button className="btn btn-ghost btn-circle">
           <svg
             xmlns="http://www.w3.org/2000/svg"
