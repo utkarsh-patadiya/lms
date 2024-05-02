@@ -43,7 +43,7 @@ function Header() {
         </div>
       </div>
       <div className="navbar-center">
-        <a className="btn btn-ghost text-xl">daisyUI</a>
+        <a className="btn btn-ghost text-xl">Learning Management System</a>
       </div>
       <div className="navbar-end">
         <Link href="/chat">

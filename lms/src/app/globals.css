@@ -8,6 +8,16 @@
   --background-end-rgb: 255, 255, 255;
 }
 
+button {
+  border-radius: 7px;
+  border: 1px solid #FFFFFF22;
+  padding: 10px 15px;
+  margin: 5px;
+  color: aliceblue;
+  background: #11111166;
+}
+
+/* 
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -30,4 +40,4 @@ body {
   .text-balance {
     text-wrap: balance;
   }
-}
+} */
